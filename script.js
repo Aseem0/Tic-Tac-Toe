@@ -1,4 +1,5 @@
 const boxes = document.querySelectorAll(".box");
+const resetBtn = document.getElementById("resetBtn");
 
 const winningPatterns = [
   [1, 2, 3],
@@ -17,3 +18,11 @@ boxes.forEach((box) => {
     box.innerHTML = "X";
   });
 });
+
+const resetGame = () => {
+  boxes.forEach((box) => {
+    box.textContent = "";
+  });
+};
+resetBtn.addEventListener("click", resetGame);
+resetGame();
