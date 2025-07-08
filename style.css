@@ -18,15 +18,15 @@ body {
 }
 
 .container {
-  height: 70vh;
+  height: 55vh;
   display: flex;
   align-items: center;
   border-radius: 20px;
 }
 
 .game {
-  height: 48vmin;
-  width: 48vmin;
+  height: 45vmin;
+  width: 45vmin;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -34,16 +34,24 @@ body {
 }
 
 .box {
-  height: 16vmin;
-  width: 16vmin;
+  height: 15vmin;
+  width: 15vmin;
   border-radius: 5px;
   border-color: black black black black;
-  background-color: white;
+  background-color: #ffffff;
   font-size: 50px;
   cursor: pointer;
+  color: black;
+}
+
+#player {
+  color: hsl(142, 67%, 59%);
+  padding-top: 50px;
+  font-family: Helvetica;
 }
 
 .reset {
   padding: 10px;
   cursor: pointer;
+  background-color: #ffffff;
 }
